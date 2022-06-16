@@ -1,0 +1,141 @@
+* {
+	margin: 4px;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.App {
+	text-align: center;
+}
+
+.App-logo {
+	height: 40vmin;
+	pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+.App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+
+.App-link {
+	color: #61dafb;
+}
+
+body {
+	background: linear-gradient(
+		to right,
+		#f78ca0 0%,
+		#f9748f 19%,
+		#fd868c 60%,
+		#fe9a8b 100%
+	);
+}
+.todoList {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.5rem;
+	height: max-content;
+	background-color: #fff;
+	box-shadow: 0 20px 80px rgba(0, 0, 0, 0.6);
+	position: relative;
+	border-radius: 1em;
+	padding: 15px;
+}
+
+.todoList ul {
+	list-style: none;
+}
+
+.btn-delete,
+.btn-edit {
+	font-weight: bold;
+	margin-left: 10px;
+	font-size: 1.25rem;
+	cursor: pointer;
+	border: none;
+	background-color: inherit;
+	transition: color 0.5s;
+}
+.btn-edit {
+	margin-left: 15px;
+}
+
+.btn-confirm {
+	font-weight: bold;
+	font-size: 1.25rem;
+	margin-left: -10px;
+	cursor: pointer;
+	border: none;
+	background-color: inherit;
+	transition: color 0.5s;
+}
+
+.btn-delete:hover {
+	color: red;
+}
+
+.btn-edit:hover {
+	color: goldenrod;
+}
+
+.btn-confirm:hover {
+	color: rgb(23, 143, 23);
+}
+
+.btn-send {
+	border-radius: 2rem;
+	width: 3.5rem;
+	height: 2rem;
+	font-size: 1.25rem;
+	background-color: #fff;
+	transition: background-color 0.5s;
+}
+
+.btn-send:hover {
+	background-color: tomato;
+}
+
+.btn-confirm {
+	width: 5rem;
+}
+
+.input-todo {
+	text-align: center;
+	margin-top: 4rem;
+	border-radius: 2rem;
+	height: 2rem;
+}
+
+.listBorder {
+	margin: 0 auto;
+	max-width: max-content;
+	border: 1px solid #80a1c1;
+	border-radius: 1rem;
+	/* background-color: #eee3ab; */
+	color: #5a5353;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
